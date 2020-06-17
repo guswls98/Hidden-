@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+<link rel="stylesheet" href="text.css" type="text/css">
+
+<style media="screen">
+
+body{margin: 0;}
+
+#main_img{width:100%;}
+.nav{
+    width:100PX;
+   height:100px;
+   position:absolute;
+   margin-top: -30%;
+   margin-left: 22%;}
+
+a{text-decoration:none; color: black;}
+
+.N_text{
+        width: 50%;
+        display: flex;
+        margin-top: -29.5%;
+        margin-left: 29.5%;
+        text-align: center;}
+
+#nav1, #nav2, #nav3{
+      height: 70px;
+      flex-grow: 1;
+      margin-left: 85px;
+      margin-right: 85px;
+      width: 150px;}
+
+
+</style>
+
+<script type="text/javascript">
+
+function g_mouseover(obj){ obj.src="이미지/txt.jpg";}
+function g_mouseout(obj){ obj.src="이미지/2.jpg";}
+
+function M_mouseover(obj){ obj.src="이미지/1-2.jpg";}
+function M_mouseout(obj){ obj.src="이미지/1.jpg";}
+
+function A_mouseover(obj){ obj.src="이미지/3-1.jpg";}
+function A_mouseout(obj){ obj.src="이미지/3.jpg";}
+
+</script>
+
+  </head>
+  <body>
+
+
+<img id="main_img" src="이미지/nav.png">
+<a href="index.html"><div class="nav"></div></a>
+
+<div class="N_text">
+<a href="gallery.html"><img id="nav1" src="이미지/2.jpg"
+                       onmouseover="g_mouseover(this)" onmouseout="g_mouseout(this)"></a>
+<a href="music.html"><img id="nav2"src="이미지/1.jpg"
+                       onmouseover="M_mouseover(this)" onmouseout="M_mouseout(this)"></a>
+<a href="art.html"><img id="nav3" src="이미지/3.jpg"
+                       onmouseover="A_mouseover(this)" onmouseout="A_mouseout(this)"></a>
+</div>
+
+  </body>
+
+
+</html>
